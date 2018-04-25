@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title>Shopping</title>
+ <link rel="stylesheet" href="normalise.css">
+</head>
+
+<body>
+  <p class="side">ACCESSORIES</p>
+ <div class="container">
+  <div class="item down right">
+  <img src="sunshawl.jpeg">
+  <div class="description"><p><strong>SUN SHAWL UPF 50+</strong></p>
+    <p>Blue Orchid, more colors online.</p>
+    <p>Cooltech<sup>TM</sup> One size 07036 <strong>$39.50</strong></p></div>
+  </div>
+
+  <div class="item down right">
+  <img src="sunbandana.jpg">
+  <div class="description"><p><strong>UNISEX SUN BANDANA UPF 50+</strong></p>
+    <p>Punch White, more colors online.</p>
+    <p>Cooltech<sup>TM</sup> One Size. 07037 <strong>$18</strong></p></div>
+  </div>
+
+  <div class="item down">
+   <img src="sungaiter.jpeg">
+   <div class="description"><p><strong>UNISEX SUN GAITER UPF 50+</strong></p>
+     <p>Spring Blue, more colors online.</p>
+     <p>Cooltech<sup>TM</sup> One Size 07066 <strong>$19.50</strong></p></div>
+  </div>
+
+  <div class="item down right"></div>
+  <div class="item down right">
+    <img src="sleeves.jpg">
+    <div class="description"><p><strong>MENS SUNS SLEEVES UPF 50+</strong></p>
+      <p>Grey Heather,more colors online.</p>
+      <p>S/M, L/XL 07008 <strong>$25</strong></p></div>
+  </div>
+
+  <div class="item down">
+    <img src="" alt="">
+  </div>
+  <div class="item right"></div>
+  <div class="item right"></div>
+  <div class="item"></div>
+ </div>
+
+ <style media="screen">
+
+    body{
+      box-sizing: border-box;
+      margin: 0 auto;
+      font-family: Arial;
+      text-align: center;
+      max-width: 960px;
+      font-size: 15px;
+    }
+
+    .container {
+      margin: 20 auto;
+      display: grid;
+      width:940px;
+      height:100vh;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(3,1fr);
+      grid-gap: 20px;
+
+
+
+    }
+
+    .item{
+      background-color: white;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .right {
+      border-right: 1px solid;
+    }
+
+    .down {
+     border-bottom: 1px solid;
+    }
+
+    .side {
+      float: right;
+    }
+
+    .description {
+      display: block;
+    }
+
+
+
+
+  </style>
+</body>
+
+</html>
