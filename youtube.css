@@ -26,6 +26,32 @@ body {
   height: 56px;
   width: 1664;
   grid-column: 1/-1;
+  padding: 0 16px 0 16px;
+
+
+}
+
+.nav-img{
+  display: inline-block;
+  margin: auto 0;
+  float: left;
+  width: 150px;
+}
+
+#icon {
+  width: 24px;
+  height: 24px;
+  padding: 8px;
+  margin:0 16px 0 0;
+  vertical-align: middle;
+}
+
+
+#logo {
+
+  width: 80px;
+  height: 24px;
+  vertical-align: middle;
 
 
 }
@@ -39,11 +65,23 @@ background-color: #E9E9E9;
 .Videos{
   width: 1440px;
   height:100vh;
-  grid-template-rows: auto;
+  /* display: grid; */
+  /* grid-template-rows: auto;*/
   place-items:center;
+  margin: 0;
 }
 
-/* Item styles */
+/* Side-bar Styles */
+
+.guide {
+  height:144px;
+  border-bottom: 1px solid gray;
+
+}
+
+
+/* Video styles */
+
 .Advertisement {
   margin: 0;
   background-color: #DCDADB;
@@ -54,5 +92,7 @@ background-color: #E9E9E9;
 
 .dismissable {
   display: grid;
-  width: 1284px;
+  width: 1285px;
+  height: 296.5px;
+  border-bottom:1px solid gray;
 }
