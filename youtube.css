@@ -24,36 +24,33 @@ body {
 
 .Nav-bar {
   height: 56px;
-  width: 1664;
+  width: 1664px;
   grid-column: 1/-1;
   padding: 0 16px 0 16px;
-
+  display: inline-block;
+  place-items:center;
 
 }
 
-.nav-img{
-  display: inline-block;
-  margin: auto 0;
-  float: left;
-  width: 150px;
+.nav_items{
+  vertical-align: middle;
+  margin: 0 auto;
 }
 
 #icon {
   width: 24px;
   height: 24px;
-  padding: 8px;
-  margin:0 16px 0 0;
-  vertical-align: middle;
+  margin:0 16px 0 16px;
 }
-
-
 #logo {
-
   width: 80px;
   height: 24px;
+}
+
+#searchbox{
+  display: inline-block;
   vertical-align: middle;
-
-
+  width: 1158px;
 }
 
 .Side-bar{
