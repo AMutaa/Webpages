@@ -24,11 +24,12 @@ body {
 }
 
 .Nav-bar {
+  box-sizing: content-box;
+  display: flex;
   height: 56px;
   width: 1664px;
   grid-column: 1/-1;
   padding: 0 16px 0 16px;
-  display: inline-block;
   place-items:center;
 
 }
@@ -36,6 +37,8 @@ body {
 .nav_items{
   vertical-align: middle;
   margin: 0 auto;
+  position: static;
+  line-height: 0;
 }
 
 #icon {
@@ -44,6 +47,8 @@ body {
   margin:0 16px 0 16px;
 }
 #logo {
+  margin: 0;
+  display: flex;
   width: 80px;
   height: 24px;
 }
