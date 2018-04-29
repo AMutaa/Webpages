@@ -27,7 +27,6 @@ body {
   box-sizing: content-box;
   display: flex;
   height: 56px;
-  width: 1664px;
   grid-column: 1/-1;
   padding: 0 16px 0 16px;
   place-items:center;
@@ -56,7 +55,15 @@ body {
 #searchbox{
   display: inline-block;
   vertical-align: middle;
-  width: 1158px;
+  height: 32px;
+  width: 60%;
+}
+
+.textarea{
+  display: inline;
+  width: 50%;
+  height: 26px;
+
 }
 
 .Side-bar{
