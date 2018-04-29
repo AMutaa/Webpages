@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Layout</title>
+    <link href="normalise.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class=" item header">
+        <div class="logo"></div>
+        <div class="sub _1"></div>
+        <div class="sub _2"></div>
+        <div class="sub _3"></div>
+
+      </div>
+      <div class=" item heading"><h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </h2></div>
+      <div class=" item text"><p>Lorem ipsum d labore et dolore magna aliquaexercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></div>
+      <div class=" item trex"></div>
+      <div class=" item trex"></div>
+      <div class=" item trex"></div>
+      <div class=" item trex"></div>
+      <div class=" item trex"></div>
+      <div class=" item trex"></div>
+      <div class=" item trex"></div>
+      <div class=" item trex"></div>
+      <div class=" item trex"></div>
+    </div>
+    <style media="screen">
+
+      body{
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        width: 60%;
+        margin: 0 auto;
+
+      }
+
+      .container{
+        background-color: #B1B7C0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 10px;
+        margin: 0 auto;
+        height:100vh;
+        padding: 15px 40px 15px 40px;
+      }
+
+     .item{
+       display: grid;
+     }
+
+    /* Header Styles */
+
+     .header{
+       display: flex;
+       grid-column: 1/-1;
+       background-color: white;
+       height:40%;
+       flex-wrap: wrap;
+       align-items: center;
+       grid-gap: 10px
+     }
+
+    .sub {
+      height: 60%;
+      width: 20%;
+
+    }
+
+    .logo{
+      background-color: green;
+      width:30%;
+      height:70%;
+    }
+
+    ._1{
+      background-color: red;
+    }
+    ._2{
+      background-color: purple;
+    }
+    ._3{
+      background-color: yellow;
+    }
+
+    .heading{
+      grid-column: 1/-1;
+    }
+
+    .text{
+      grid-column: 1/-1;
+    }
+
+    .trex{
+      background-color: black;
+    }
+
+
+    </style>
+
+  </body>
+</html>
