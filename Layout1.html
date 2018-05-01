@@ -55,12 +55,12 @@ body{
   grid-column: 1/-1;          /*specific column position*/
   display: grid;              /*display in form of a rows and columns*/
   grid-template-columns: repeat(8, 1fr);   /*i want to have 8 columns of the same size*/
-  grid-gap: 10px;                           /*space between those columns*/
+  grid-gap: 10px;                           /*space between the different rows and columns*/
 }
 
 .b1{
   grid-column: 1/3;             /*specific column position*/
-  margin: 10px;                 /*create some space around this box*/
+  margin: 10px 0;                 /*create some space around this box*/
 }
 
 .b2{
@@ -76,7 +76,7 @@ grid-column: 8/-1;                /*specific column position*/
 }
 
 .small {
-  margin: 20px;                  /*create space around the small boxes*/
+  margin: 20px 0;                  /*create space around the small boxes*/
 }
 
 .header{
