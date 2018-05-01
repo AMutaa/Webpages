@@ -2,29 +2,31 @@
 <html>
   <head>
     <title>Layout2</title>
+    <link rel="stylesheet" href="normalise.css">
   </head>
   <body>
-    <div class="container">
-      <div class="container1">
-        <div class=" item one">
-          <div class="_1"></div>
-          <div class="_2"></div>
-          <div class="_3"></div></div>
+    <div class="cont container">
+      <div class="cont kite container1">
+        <div class="cont nav">
+          <div class=" item _1"></div>
+          <div class="item menu _2"></div>
+          <div class="item menu _3"></div></div>
         <div class=" item two"></div>
         <div class=" item three"></div>
         <div class=" item four"></div>
       </div>
-      <div class="container2">
-        <div class="kite"></div>
-        <div class="kite"></div>
-        <div class="kite"></div>
-        <div class="kite"></div>
+      <div class="cont item container2">
+        <div class="kite k1"></div>
+        <div class="kite k2"></div>
+        <div class="kite k3"></div>
+        <div class="kite k4"></div>
         <div class="kite side"></div>
-        <div class="bottom">
+        <div class="cont item container3">
           <div class="kite trex b1"></div>
           <div class="kite trex b2"></div>
-          <div class="kite trex b3"></div>
-          <div class="kite trex b4"></div>
+          <div class="kite b3"></div>
+          <div class="kite b4"></div>
+        </div>
         </div>
       </div>
     </div>
@@ -32,143 +34,104 @@
     <style>
 
     body{
-      box-sizing: border-box;
-    }
-    /* Container styles */
-    .container{
-      margin: 0 auto;
-      max-width: 60%;
-      height: 100vh;
-      display: grid;
-      grid-template-rows: 1fr 2fr;
-      grid-gap: 10px;
-      border: 2px solid red;
+      box-sizing: border-box;                           /*allow me to size my elements*/
     }
 
-    /* Conatiner1 Styles */
+    .container{
+      margin: 0 auto;                                  /*center my container*/
+      max-width: 50%;                                  /*this container shoudl not exceed 50% width of the browser*/
+      height: 100vh;                                   /*this container should occupy the full vertical height of the browser*/
+      grid-template-rows: 1fr 2fr;                     /*the container should have 2 with one twice the size of the other*/
+
+    }
+
+     /* Conatiner1 styles */
 
     .container1 {
-      background-color: white;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 1fr 1fr 6fr;
-      grid-gap: 10px;
+      grid-template-columns: repeat(3, 1fr);         /*three columns of same size*/
+      grid-template-rows: 1fr 1fr 6fr;               /*3 rows with one 6 times the size of one of the other two*/
     }
 
-    .item{
-      background-color: black;
+
+    .nav{
+      grid-column: 1/-1;                            /*specific column position*/
+      grid-row: span 1;                             /*should occupy one whole row in the conatiner*/
+      grid-template-columns: repeat(4, 1fr);        /*container should have 4 columns of teh same size*/
     }
 
-    .one{
-      grid-column: 1/-1;
-      grid-row: span 1;
-      background-color: white;
-      display: grid;
-      grid-gap: 15px;
-      grid-template-columns: repeat(4, 1fr);
-    }
-
-    .one div{
-      background-color: black;
-    }
-
-    ._3{
-      grid-column: 4/-1;
-      height: 50%;
-      align-self: center;
+    .menu{
+      margin: 10px 0;                               /*Create some space on the top and container3 of the boxes*/
     }
 
     ._2{
-      height: 50%;
-      align-self: center;
+      grid-column: 2/3;                            /*specific column position*/
+    }
+
+    ._3{
+      grid-column: 4/-1;                           /*specific column position*/
     }
 
     .two{
-      grid-column: 1/-1;
-      grid-row: span 1;
+      grid-column: 1/-1;                          /*specific column position*/
+      grid-row: span 1;                           /*occupy one full row*/
     }
 
     .three {
-      grid-column: span 2;
-      grid-row: span 2
+      grid-column: span 2;                        /*occupy two columns*/
+      grid-row: span 2                            /*occupy two rows*/
     }
 
     .four {
-      grid-column: span 1;
-      grid-row: span 2;
+      grid-column: span 1;                        /*occupy one column*/
+      grid-row: span 2;                           /*occupy two rows*/
 
     }
 
     /* Container2 styles */
 
     .container2{
-      background-color: black;
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      grid-template-rows: 1fr 1fr 2fr;
-      grid-gap: 10px;
-      padding:10px 10px 20px 10px;
-    }
-
-    .container2 {
-      background-color: black;
-    }
-
-    .kite{
-      background-color: white;
+      grid-template-columns: repeat(3,1fr);      /*should have 3 columns of the same size*/
+      grid-template-rows: 1fr 1fr 2fr;           /*should have 3 rows with one twice the size of one of the other two*/
+      padding: 30px 10px;                        /*this container2 should have some spacing around it*/
     }
 
     .side{
-      grid-column: 3/-1;
-      grid-row: 1/6;
+      grid-column: 3/-1;                         /*specific column position*/
+      grid-row: 1/6;                             /*specific row position*/
     }
 
-   .bottom{
-     grid-column: 1/3;
-     grid-row: 3/6;
-     display: grid;
-     grid-template-columns: repeat(6, 1fr);
-     grid-template-rows: 1fr 1fr 15fr 15fr;
-     grid-gap: 10px;
+
+    /* container3 styles */
+
+
+   .container3{
+     grid-column: 1/3;                          /*specific column position*/
+     grid-row: 3/6;                             /*specific row position*/
+     grid-template-columns: 1fr 1fr;            /*two columns of the same size within this container*/
+     grid-template-rows: 1fr 5fr;               /*two rows in this container with one five times the size of the other*/
 
    }
 
-   .container2 div bottom{
-     background-color: black;
+   .trex{
+     margin: 30px 90px 0 0;                        /*create some space around the boxes*/
    }
 
-   .b1{
-     grid-column: span 2;
+    /* major styles */
+
+   .item{
+     background-color: black;                       /*certain elements the container should be black*/
+     }
+
+   .kite{
+     background-color: white;                      /*certain elements of the container should be white*/
    }
 
-   .b2{
-     grid-column: 4/6;
+   .cont{
+     display: grid;                                /*certain elements should be displayed in the form of rows and columns*/
+     grid-gap: 10px;                               /*spacing beteen the various rows and columns*/
    }
 
-   .b3{
-     grid-column: 1/4;
-
-
-   }
-
-   .b4{
-     grid-column: 4/7;
-
-
-   }
-
-
-
-
-
-
-
-
-
-    </style>
-
-
-
+  </style>
 
   </body>
 </html>
