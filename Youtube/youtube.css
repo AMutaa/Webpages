@@ -1,0 +1,108 @@
+/* body styles */
+body {
+  margin: 0;
+  font-family: 'Roboto' , sans-serif;
+  display: block;
+}
+
+/* container styles */
+.container {
+  margin: 0 auto;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+
+
+}
+
+/* section styles */
+.section {
+  display: grid;
+  background-color:white;
+}
+
+.Nav-bar {
+  box-sizing: content-box;
+  display: flex;
+  height: 56px;
+  grid-column: 1/-1;
+  padding: 0 16px 0 16px;
+  place-items:center;
+
+}
+
+.nav_items{
+  vertical-align: middle;
+  margin: 0 auto;
+  position: static;
+  line-height: 0;
+}
+
+#icon {
+  width: 24px;
+  height: 24px;
+  margin:0 16px 0 16px;
+}
+#logo {
+  margin: 0;
+  display: flex;
+  width: 80px;
+  height: 24px;
+}
+
+#searchbox{
+  display: inline-block;
+  vertical-align: middle;
+  height: 32px;
+  width: 60%;
+}
+
+.textarea{
+  display: inline;
+  width: 50%;
+  height: 26px;
+
+}
+
+.Side-bar{
+width: 240px;
+height: 100vh;
+background-color: #E9E9E9;
+}
+
+.Videos{
+  width: 1440px;
+  height:100vh;
+  /* display: grid; */
+  /* grid-template-rows: auto;*/
+  place-items:center;
+  margin: 0;
+}
+
+/* Side-bar Styles */
+
+.guide {
+  height:144px;
+  border-bottom: 1px solid gray;
+
+}
+
+
+/* Video styles */
+
+.Advertisement {
+  margin: 0;
+  background-color: #DCDADB;
+  width: 1440px;
+  height: 260px;
+
+}
+
+.dismissable {
+  display: grid;
+  width: 1285px;
+  height: 296.5px;
+  border-bottom:1px solid gray;
+}
